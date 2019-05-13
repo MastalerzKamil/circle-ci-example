@@ -8,4 +8,8 @@ describe('Form', () => {
     ReactDOM.render(<Form />, div);
     ReactDOM.unmountComponentAtNode(div);
   });
+  it('Should be failed', () => {
+    const div = document.createElement('div');
+    expect(div).toBe(true);
+  });
 });
