@@ -8,4 +8,9 @@ describe('Form', () => {
     ReactDOM.render(<Form />, div);
     ReactDOM.unmountComponentAtNode(div);
   });
+  it('Should render itself without crash', () => {
+    const div = document.createElement('div');
+    ReactDOM.render(<Form />, div);
+    ReactDOM.unmountComponentAtNode(div);
+  });
 });
